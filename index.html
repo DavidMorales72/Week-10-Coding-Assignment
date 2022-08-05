@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <!--styled the header of the page to include a gradient background and it also includes a img-->
+    <div class="container-fluid">
+        <h1 class="text-center bg-red">List of NBA teams you know <img src="https://a.espncdn.com/combiner/i?img=/i/espn/misc_logos/500/nba.png" alt="NBA Logo"></h1>
+    </div>
+    
+    <div class="container-fluid">
+        <!--created a table that is styled using the bootstrap class='table'-->
+        <table id="table-body" class="table table-hover">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Team Name</th>
+                <th scope="col">Team City</th>
+                <th scope="col">Number of Championships</th>
+                <th scope="col">Conference</th>
+            </tr>
+            </thead>
+            <!--Included two examples so that the user has an idea of how the information they will input should look like-->
+            <tr  class="bg-teal $pink-100">
+                <td>Lakers</td>
+                <td>Los Angeles</td>
+                <td>17</td>
+                <td>Western</td>
+            </tr>
+
+            <tr>
+                <td>Celtics</td>
+                <td>Boston</td>
+                <td>17</td>
+                <td>Eastern</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container container-fluid">
+        <div id="data">
+            <!--included input boxes with place holders so that the user knows what to type-->
+            <input type="text" id="team-name" placeholder="Enter Team Name">
+            <input type="text" id="team-city" placeholder="Enter Team City">
+            <!--This input is of type number which wil restict the users input to only numbers-->
+            <input type="number" id="championships" placeholder="# of Champioships">
+            <input type="text" id="conference" placeholder="Western/Easter">
+            <!--created a button to submit all of the users input and made the button have a green outline-->
+            <button class="btn btn-outline-success" id="add-data">Add Team</button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
